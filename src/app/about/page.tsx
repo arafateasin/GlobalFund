@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -235,18 +236,18 @@ export default function AboutPage() {
             create positive impact.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
+            <Link
               href="/campaigns"
               className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200"
             >
               Browse Campaigns
-            </a>
-            <a
+            </Link>
+            <Link
               href="/create"
               className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200"
             >
               Start Your Campaign
-            </a>
+            </Link>
           </div>
         </div>
       </div>
